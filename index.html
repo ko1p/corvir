@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Распростронение коронавируса SARS-CoV-2 COVID-19">
+  <meta name="keywords" content="Коронавирус, COVID-19, SARS-CoV-2, статистика короновируса">
+  <meta name="author" content="Белько Антон">
+  <meta name="yandex-verification" content="92d2914d338efdcc" />
+  <title>COVID-19</title>
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src='./js/countries.js'></script>
+  <script src='./js/api.js'></script>
+  <script src='./js/statistic.js'></script>
+</head>
+<body class="page">
+  <header class="header page__header">
+    <span class="logo">SARS-CoV-2</span>
+    <p class="header__stat">
+      <span class="header__description">Всего случаев:</span>
+      <span class="header__total">-</span>
+    </p>
+  </header>
+  <div class="content page__wrapper">
+    <h1 class="content__title">Данные о распространении коронавирусной инфекции SARS-CoV-2</h1>
+    <section class="total content__total">
+      <h2 class="total__title">Всего случаев • Live</h2>
+      <p class="total__number">-</p>
+    </section>
+    <section class="sng-countries">
+      <h2 class="heading"></h2>
+      <table class="table sng__table">
+        <tr class="table__row table__row_type_heading">
+          <th class="table__title">Страна</th>
+          <th class="table__title">Заболели</th>
+          <th class="table__title">Умерли</th>
+          <th class="table__title">Вылечились</th>
+        </tr>
+      </table>
+    </section>
+    <section class="rating">
+      <h2 class="heading">Топ-10 стран по количеству случаев</h2>
+      <table class="table rating__table">
+        <tr class="table__row table__row_type_heading">
+          <th class="table__title">Страна</th>
+          <th class="table__title">Заболели</th>
+          <th class="table__title">Умерли</th>
+          <th class="table__title">Вылечились</th>
+        </tr>
+      </table>
+    </section>
+    <section class="mortality content__mortality">
+      <h2 class="heading">Самый высокий % смертности</h2>
+      <div class="diagram">
+  
+      </div>
+    </section>
+  </div>
+  <footer class="footer page__footer">
+    <span>&copy; 2020 Источник данных — <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" class="footer__link">JHU CSSE</a></span>
+  </footer>
+  <script src='./js/script.js'></script>
+
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(61586227, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/61586227" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
