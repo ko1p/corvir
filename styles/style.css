@@ -1,0 +1,290 @@
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.page {
+  background-color: #000;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  box-sizing: border-box;
+  border-bottom: 1px solid #545454;
+  background-color: #000;
+  color: #fff;
+  padding: 0 30px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1550px;
+  min-width: 704px;
+  margin: auto;
+}
+
+.page__header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+  left: 0;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.sng-countries {
+  margin-bottom: 20px;
+}
+
+.header__stat {
+  margin: 0;
+  display: flex;
+}
+
+.header__description {
+  font-size: 9px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.header__total {
+  font-size: 24px;
+}
+
+.page__wrapper {
+  margin: 100px auto 70px;
+}
+
+.content {
+  width: 704px;
+}
+
+.content__title {
+  color: #898989;
+  font-size: 12px;
+  line-height: 1.5em;
+  font-weight: normal;
+  max-width: 304px;
+  margin: 0;
+}
+
+.content__total {
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.total__title {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;;
+  color: #898989;
+  display: inline-block;
+  margin: 0;
+}
+
+.total__title::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #B94747;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 1px;
+  animation: blink .7s linear infinite alternate;
+}
+
+.total__number {
+  font-size: 144px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0;
+}
+
+.heading {
+  color: #898989;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.table {
+  display: block;
+  color: #FFFFFF;
+}
+
+.rating__table {
+  margin-top: 36px;
+}
+
+.table tbody {
+  display: block;
+}
+
+.table__row {
+  min-height: 60px;
+  border-bottom: 1px solid #2D2D2D;
+  display: grid;
+  grid-template-columns: minmax(238px, 1fr) repeat(3, 1fr);
+  align-content: center;
+}
+
+.table__row_type_heading {
+  min-height: 24px;
+  align-content: start;
+}
+
+.table__title {
+  font-size: 9px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.table__data {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.content__mortality {
+  margin-top: 54px;
+}
+
+.diagram__row {
+  margin: 20px 0;
+}
+
+.diagram__country {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.diagram__caption {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.diagram__line {
+  height: 30px;
+  background-color: #2D2D2D;
+  display: flex;
+}
+.diagram__visualisation_type_healed {
+  background-color: #47B974;
+}
+
+.diagram__visualisation_type_dead {
+  background-color: #B94747;;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #898989;
+  line-height: 1.5;
+}
+
+.page__footer {
+  margin: 70px auto;
+}
+
+.footer__link {
+  color: #898989;
+  transition: opacity .2s linear;
+}
+
+.footer__link:hover {
+  opacity: .8;
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .page {
+    max-width: 320px;
+  }
+
+  .content {
+    max-width: 320px;
+  }
+
+  .header {
+    max-width: 320px;
+    min-width: 280px;
+  }
+
+  .header__stat {
+    display: none;
+  }
+  
+  .total__number {
+    font-size: 60px;
+    margin-left: 5px;
+  }
+
+  .content__title {
+    margin-left: 5px;
+  }
+
+  .total__title {
+    margin-left: 5px;
+  }
+
+  .sng-countries {
+    max-width: 320px;
+    margin-left: 5px;
+  }
+
+  .table__title {
+    font-size: 8px;
+  }
+
+  .table__row.table__row_type_heading {
+    width: 320px;
+  }
+
+  .table__data {
+    font-size: 13px;
+  }
+
+  .diagram__caption {
+    font-size: 10px;
+  }
+
+  .table__row {
+    grid-template-columns: minmax(120px, 1fr) repeat(3, 1fr);
+  }
+
+  .rating {
+    max-width: 320px;
+    margin-left: 5px;
+  }
+
+  .content__mortality {
+    max-width: 320px;
+    margin-left: 5px;
+  }
+}
