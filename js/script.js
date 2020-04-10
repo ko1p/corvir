@@ -63,7 +63,7 @@ dataFromApi
 
 
           /// Отсортированные по убыванию случаи выздоровления
-          const sortPr = () => {
+        const sortPr = () => {
             const copyArr = pdr.slice().sort(function(a, b) {
                 return b[2] - a[2]
             })
@@ -110,18 +110,16 @@ dataFromApi
 
         setCountryInfo("Россия")
         setCountryInfo("Украина")
+        setCountryInfo("Беларусь")
         setCountryInfo("Эстония")
         setCountryInfo("Литва")
         setCountryInfo("Армения")
-        setCountryInfo("Беларусь")
         setCountryInfo("Азербайджан")
         setCountryInfo("Казахстан")
-        setCountryInfo("Латвия")
         setCountryInfo("Узбекистан")
+        setCountryInfo("Латвия")
         setCountryInfo("Киргизия")
         setCountryInfo("Грузия")
-
-
 
 
         function topTenCountries() {
@@ -171,4 +169,17 @@ dataFromApi
         }
         topTen()
 
-    });
+    })
+        .then(() => {
+            function noZeros() {
+                const zeroNodes = document.querySelectorAll('.table__data');
+                const zerosArray = Array.from(zeroNodes);
+                zerosArray.forEach((item) => {
+                    console.log(item.textContent, "item")
+                    if (item.textContent === '0') {
+                        item.textContent = 'н/д'
+                    }
+                })
+            }
+            noZeros()
+        })
