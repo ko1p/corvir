@@ -175,7 +175,6 @@ dataFromApi
                 const zeroNodes = document.querySelectorAll('.table__data');
                 const zerosArray = Array.from(zeroNodes);
                 zerosArray.forEach((item) => {
-                    console.log(item.textContent, "item")
                     if (item.textContent === '0') {
                         item.textContent = 'н/д'
                     }
