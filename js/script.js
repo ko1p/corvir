@@ -75,9 +75,10 @@ dataFromApi
         const totalConfirmed = array.reduce((acc, item) => {
             return acc + item[1].confirmed;
         }, 0);
-
-        totalConfirmedElement.textContent = totalConfirmed;
-        totalConfirmedElementHeader.textContent = totalConfirmed;
+        
+        
+        totalConfirmedElement.textContent = totalConfirmed.toLocaleString();
+        totalConfirmedElementHeader.textContent = totalConfirmed.toLocaleString();
         
         /// Всего умерших
 
