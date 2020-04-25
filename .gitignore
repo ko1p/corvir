@@ -1,0 +1,8 @@
+# игнорируем папки:
+/node_modules
+/dist
+
+# файлы
+robots.txt
+googleff91042007909487.html
+sitemap.xml
