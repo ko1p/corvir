@@ -184,7 +184,8 @@ const conEng = [
 "Burundi",
 "Papua New Guinea",
 "South Sudan",
-"Timor-Leste"]
+"Timor-Leste",
+"Yemen"]
 
 const conRus = [
 "Испания",
@@ -370,4 +371,5 @@ const conRus = [
 "Бурунди",
 "Папуа - Новая Гвинея",
 "Южный Судан",
-"Восточный Тимор"]
+"Восточный Тимор",
+"Йемен"]
